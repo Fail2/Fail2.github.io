@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/logo.png" type="image/png">
+	<title>Malay Chakma - Portfolio</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		section {
+			scroll-margin-top: -70px;
+			/* new modern CSS fix, if supported */
+			/* fallback for older browsers */
+			padding-top: 70px;
+			margin-top: 0px;
+		}
+
+
+		.project-card {
+			height:500px;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			padding: 20px;
+			margin-bottom: 20px;
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			background: #f9f9f9;
+		}
+
+		.project-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+		}
+
+		.project-card h4 {
+			font-size: 1.2rem;
+			font-weight: bold;
+			color: #333;
+		}
+
+		.project-card p {
+			font-size: 1rem;
+			color: #555;
+		}
+
+		.project-type {
+			font-style: italic;
+			font-size: 0.95rem;
+			color: #777;
+			margin-top: -10px;
+			margin-bottom: 10px;
+		}
+
+
+		.btn-project {
+			background-color: #007bff;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			padding: 5px 10px;
+			font-size: 0.9rem;
+			transition: background-color 0.3s ease;
+		}
+
+		.btn-project:hover {
+			background-color: #0056b3;
+		}
+
+		.cv-dropdown {
+			display: none;
+			position: absolute;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			padding: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.cv-option {
+			display: block;
+			margin-bottom: 10px;
+			padding: 5px;
+			cursor: pointer;
+			text-decoration: none;
+			color: #007bff;
+		}
+
+		.cv-option:hover {
+			background-color: #f1f1f1;
+		}
+
+		.download-cv:hover .cv-dropdown {
+			display: block;
+		}
+
+		/* Thesis Card Style */
+		.thesis-card {
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			background: #eaf0f7;
+			padding: 20px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+		}
+
+		.thesis-card h4 {
+			font-size: 1.3rem;
+			color: #007bff;
+		}
+
+		.thesis-card p {
+			font-size: 1rem;
+			color: #333;
+		}
+
+		/* Icon and Emoji Styling */
+		.icon-text {
+			font-size: 1.1rem;
+			margin-top: 10px;
+			display: flex;
+			align-items: center;
+		}
+
+		.icon-text i {
+			margin-right: 8px;
+			color: #007bff;
+		}
+
+		.contact-btn,
+		.download-btn {
+			padding: 10px 20px;
+			font-size: 1.1rem;
+			background-color: #28a745;
+			color: white;
+			border: none;
+			border-radius: 5px;
+		}
+
+		.contact-btn:hover,
+		.download-btn:hover {
+			background-color: #218838;
+		}
+
+		.social-links a {
+			margin-right: 15px;
+			font-size: 1.5rem;
+			color: #007bff;
+		}
+
+		.social-links a:hover {
+			color: #0056b3;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""
+							style="max-height: 60px;"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+							<li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+							<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="#course">Courses</a></li>
+							<!-- <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li> -->
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Home Banner Section -->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row ">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h1 class="text-uppercase">I am Malay Chakma</h1>
+							<p>Competitive Programmer | Teaching Assistant | Quick Learner</p>
+							<div class="d-flex align-items-center">
+								<div class="download-cv">
+									<button class="primary_btn download-btn">Download CV</button>
+									<div class="cv-dropdown">
+										<a href="cv/Malay-Chakma.pdf" class="cv-option" target="_blank">Software
+											Engineer CV</a>
+									</div>
+								</div>
+								<a class="primary_btn contact-btn" href="mailto:malaychakma7@gmail.com"><span>Contact
+										Me</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="img-fluid" src="img/Pic.png"
+								alt="Malay Chakma">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- About Section -->
+	<section id="about" class="about_area section_gap">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="img-fluid" style="margin-left:250px" src="img/about-us.png" alt="About Me">
+					</div>
+				</div>
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>About Me</h2>
+						<p>I am <strong>Malay Chakma</strong>, a Computer Science and Engineering student at
+							<strong>MBSTU</strong> with a CGPA of <strong>2.95/4.00</strong>
+						</p>
+						<p>
+							As a passionate competitive programmer, I actively solve problems on platforms like
+							<strong>Codeforces</strong>, <strong>Codechef</strong>, and others to continually sharpen my
+							algorithmic and
+							problem-solving
+							skills. I enjoy tackling challenging problems and thinking outside the box to develop
+							innovative solutions.
+						</p>
+						<p>
+							In both my academic and personal projects, I have worked with a diverse set of technologies,
+							including Python, Java, and Kotlin, enabling me to build robust, efficient, and versatile
+							software solutions.
+						</p>
+						<p><a href="#projects">View projects</a></p>
+						<p><a class="primary_btn" href="mailto:malaychakma7@gmail.com"><span>Get in Touch</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<!-- Achievements Section -->
+	<section id="achievements" class="achievements_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Achievements</h2>
+					</div>
+				</div>
+			</div>
+
+			<!-- Programming Achievements -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Programming Profiles</h3>
+				</div>
+
+				<!-- Achievement 1 -->
+				<div class="col-lg-4">
+					<div class="project-card h-auto">
+						<i class="fa fa-user" style="font-size: 2rem; color: #007bff;"></i>
+						<h4>Pupil - Codeforces (Max Rating: 1244)</h4>
+						<p>Ongoing</p>
+						<a href="https://codeforces.com/profile/Fail_2" target="_blank">View Profile</a>
+					</div>
+				</div>
+
+				<!-- Achievement 2 -->
+				<div class="col-lg-4">
+					<div class="project-card h-auto">
+						<i class="fa fa-user" style="font-size: 2rem; color: #007bff;"></i>
+						<h4>1 Star - CodeChef (Max Rating: 1382)</h4>
+						<p>Ongoing</p>
+						<a href="https://www.codechef.com/users/fail_2" target="_blank">View Profile</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contest Programming -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Contest Programming</h3>
+				</div>
+				<!-- Achievement 3 -->
+				<div class="col-lg-4">
+					<div class="project-card h-auto">
+						<i class="fa fa-trophy" style="font-size: 2rem; color: #007bff;"></i>
+						<h4>Ranked 39th (2nd Runner-Up in Beginner Category) - MBSTU CSE Inter-Department Programming
+							Contest 2020</h4>
+						<p>March 2020</p>
+						<a href=" https://toph.co/c/mbstu-inter-department-2020/standings" target="_blank">View
+							Result</a>
+					</div>
+				</div>
+
+
+				<!-- Other Achievements -->
+				<!-- <div class="row">
+					<div class="col-lg-12">
+						<h3>Other Achievements</h3>
+					</div>
+					Achievement 9
+					<div class="col-lg-4">
+						<div class="project-card">
+							<i class="fa fa-star" style="font-size: 2rem; color: #007bff;"></i>
+							<h4>Ranked 3rd - Science Olympiad 2019</h4>
+							<p>By BAS-FSIBL</p>
+						</div>
+					</div>
+				</div> -->
+			</div>
+	</section>
+
+
+	<!-- Research Section -->
+	<section id="research" class="research_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Research</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Research Paper or Article (if applicable) -->
+				<!-- Additional Research Projects -->
+				<div class="col-lg-12">
+					<div class="thesis-card">
+						<h4><i class="fa fa-flask" style="font-size: 1.5rem; color: #007bff;"></i> Project: Driver
+							Drowsiness Detection</h4>
+						<p><strong>Time Period:</strong>May 2025 - Present</p>
+						<p><strong>Technologies Used:</strong> Python, YOLO, OpenCV</p>
+						<p>A real-time system that monitors a driver's eye movements and facial features using computer
+							vision techniques to detect signs of drowsiness and alert the driver to prevent accidents.
+						</p>
+						<p><strong>GitHub Repository:</strong> <a
+								href="https://github.com/Fail2/Driver-Drowsiness-Detection" target="_blank">View
+								Repository</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects Section -->
+	<section id="projects" class="projects_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Projects</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<!-- Project: Inventory Management -->
+				<div class="col-lg-4 col-md-6">
+					<div class="project-card">
+						<h4>Inventory Management</h4>
+						<p><strong>Type:</strong> Web Platform</p>
+						<p><strong>Time Period:</strong> April 2025 – May 2025</p>
+						<p><strong>Technologies Used:</strong> Django, Python, MySQL, HTML, CSS,Role-based functions</p>
+						<p>A web-based application designed to help admins and users efficiently manage products,
+							suppliers, and orders, with features for adding, updating, and tracking inventory in
+							real-time.</p>
+						<div class="btn-group">
+
+							<div style="display: flex; gap: 10px;">
+								<a class="btn-project" href="https://github.com/Fail2/Inventory_Management">Code</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Project: Chat App With Chat-Bot (Android) -->
+				<div class="col-lg-4 col-md-6">
+					<div class="project-card">
+						<h4>Chat App With Chat-Bot</h4>
+						<p><strong>Type:</strong> Android App</p>
+						<p><strong>Time Period:</strong> May 2024 - December 2024</p>
+						<p><strong>Technologies Used:</strong> Android Studio, Java, Firebase</p>
+						<p>A real-time messaging application that enables users to communicate seamlessly, featuring an
+							integrated chatbot for instant automated responses and enhanced user interaction.</p>
+						<div class="btn-group">
+
+							<a class="btn-project" href="https://github.com/Fail2/ChatApp_With_Chat-Bot">Code</a>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Project: Online Classroom (Web) -->
+				<div class="col-lg-4 col-md-6">
+					<div class="project-card">
+						<h4>Online Classroom</h4>
+						<p><strong>Type:</strong> Web Platform</p>
+						<p><strong>Time Period:</strong> May 2025 - June 2025</p>
+						<p><strong>Technologies Used:</strong> Python, Django, DRF,REST API's, JWT
+							Authentication, Role-based Permissions, HTML, CSS</p>
+						<p>A role-based online learning system built with RESTful APIs, where teachers can create
+							courses and upload learning materials, while students can enroll and access content based on
+							their assigned roles and permissions.</p>
+						<div class="btn-group">
+
+							<a class="btn-project" href="https://github.com/Fail2/Online-Classroom">Code</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Experience Section -->
+	<section id="course" class="experience_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Courses</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Experience 1: Intern(Python/Django) -->
+				<div class="col-lg-12">
+					<div class="project-card">
+						<i class="fa-laptop-code" style="font-size: 2rem; color: #007bff;"></i>
+						<h4>Python/Django - EDGE Bangladesh</h4>
+						<p><strong>Time Period:</strong> March 2025 - Present</p>
+						<p><strong>Responsibilities:</strong></p>
+						<ul>
+							<li>Built practical skills in Python and Django web development.</li>
+							<li>Learned how to write clean, readable, and maintainable code following DRY (Don’t Repeat
+								Yourself) principles.</li>
+							<li>Gained knowledge of RESTful APIs and core API design principles.</li>
+							<li>Gained hands-on experience by building real-time projects</li>
+							<li>Improved problem-solving skills by facing many coding challenges.</li>
+						</ul>
+						<a class="btn-project" href="https://www.facebook.com/EDGE2041/" target="_blank">Visit EDGE</a>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+	<!-- Leadership Section -->
+	<section id="leadership" class="leadership_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Leadership</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Leadership Role 1: Teaching Assistant - HELP -->
+				<div class="col-lg-12">
+					<div class="project-card">
+						<i class="fa fa-users" style="font-size: 2rem; color: #007bff;"></i>
+						<h4>Teaching Assistant - Moanoghar Support Group(Help)</h4>
+						<p><strong>Time Period:</strong> 2023 - Present</p>
+						<p><strong>Responsibilities:</strong></p>
+						<ul>
+							<li>Teach school students during vacations, focusing on academic improvement and personal
+								development.</li>
+							<li>Organize educational competitions such as math quizzes and creative contests like
+								drawing.</li>
+							<li>Motivate and guide students to aim for public university admission and pursue their
+								dreams with dedication.</li>
+							<li>Lead and participate in charity events, fundraising campaigns, and awareness drives.
+							</li>
+						</ul>
+						<a class="btn-project" href="https://www.facebook.com/moanoghareducation" target="_blank">HELP
+							on Facebook</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Contact Me</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center mb-5" >
+				<!-- Contact Information -->
+				<div class="col-lg-4 mb-4">
+					<div class="contact_info">
+						<h4>Get in Touch</h4>
+						<ul class="list-unstyled">
+							<li><strong>Email:</strong> <a
+									href="mailto:malaychakma7@gmail.com">malaychakma7@gmail.com</a></li>
+							<li><strong>Phone:</strong> <a href="tel:+8801845769993">+8801845768893</a></li>
+							<li><strong>Location:</strong> Santosh, Tangail</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Contact Form -->
+				<div class="col-lg-8">
+					<form id="contactForm" class="contact_form">
+						<div class="form-group">
+							<input type="text" id="name" class="form-control" name="name" placeholder="Your Name"
+								required>
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" class="form-control" name="email" placeholder="Your Email"
+								required>
+						</div>
+						<div class="form-group">
+							<textarea id="message" class="form-control" name="message" rows="5"
+								placeholder="Your Message" required></textarea>
+						</div>
+						<button type="submit" class="primary_btn contact-btn">Send Email</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Footer Section -->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12 text-center">
+					<div class="footer_top">
+						<h4>Follow Me</h4>
+						<div class="social-links">
+							<a href="https://www.linkedin.com/in/malay-chakma-5417a1210/"><i
+									class="fa fa-linkedin"></i></a>
+							<a href="https://github.com/Fail2"><i class="fa fa-github"></i></a>
+							<a href="https://x.com/chakma_malay"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.facebook.com/malay.chakma.568"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+					<p id="lastModifiedDate">Last Modified: </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Optional JavaScript -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
+
+<script>
+	// JavaScript to handle mailto action with dynamic content
+	document.getElementById('contactForm').addEventListener('submit', function (event) {
+		event.preventDefault();
+
+		// Collect the message data
+		const message = document.getElementById('message').value;
+
+		// Create mailto link with subject and only the message body
+		const subject = "Contact Form Submission";  // You can modify the subject here
+		const body = `${encodeURIComponent(message)}`;  // Only the message
+
+		// Create the mailto link
+		const mailtoLink = `mailto:malaychakma7@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+		// Open the default email client with the pre-filled mailto link
+		window.location.href = mailtoLink;
+	});
+
+	// JavaScript to display last modified date
+	document.getElementById('lastModifiedDate').innerHTML = "Last Modified: " + document.lastModified;
+</script>
